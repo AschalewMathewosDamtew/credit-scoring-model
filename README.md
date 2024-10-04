@@ -1,23 +1,27 @@
-# Credit Scoring Model
+# Exploratory Data Analysis (EDA)
 
-## Overview
-This project develops a Credit Scoring Model for Bati Bank, aimed at facilitating a buy-now-pay-later service in partnership with an eCommerce company. The model assesses the creditworthiness of potential borrowers using historical data to predict the likelihood of loan default.
+This branch contains the Exploratory Data Analysis (EDA) for the dataset in `data.csv`. The analysis aims to understand the dataset's structure, distribution, and relationships among features.
 
-## Objectives
-1. Define a proxy variable to categorize users as high risk (bad) or low risk (good).
-2. Identify observable features that correlate highly with the defined default variable.
-3. Develop a model to estimate risk probability for new customers.
-4. Create a model that assigns a credit score based on risk probability.
-5. Predict the optimal loan amount and duration for new applicants.
+## Overview of the Analysis
 
-## Prerequisites
+1. **Data Overview**: Insights into the dataset structure, including data types and shape.
+2. **Summary Statistics**: Key statistical metrics for numerical features.
+3. **Distribution of Numerical Features**: Visualizations for `Amount` and `Value` distributions.
+4. **Distribution of Categorical Features**: Analysis of the frequency of categorical features.
+5. **Correlation Analysis**: Heatmap to identify relationships between numerical features.
+6. **Missing Values**: Identification of missing values in the dataset.
+7. **Outlier Detection**: Box plots to identify potential outliers in numerical features.
+
+## Requirements
+
 - Python 3.x
-- Required libraries (Pandas, NumPy, Scikit-learn, etc.)
+- Pandas
+- Seaborn
+- Matplotlib
 
-## Installation
-Clone this repository and install the required dependencies:
+## Usage
+
+Run the analysis script to perform EDA on `data.csv`:
 
 ```bash
-git clone https://github.com/AschalewMathewosDamtew/credit-scoring-model.git 
-cd credit-scoring-model
-pip install -r requirements.txt
+python eda_script.py
